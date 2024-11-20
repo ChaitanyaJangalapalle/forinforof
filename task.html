@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //reverse of a string
+        var str=prompt("enter a string:-");
+        var result="";
+        for(var i=str.length-1;i>=0;i--){
+            result+=str[i];
+        }
+        console.log("reversed string is:",result);
+
+
+        // //even and odd sum
+        var array=[23,54,67,64,46,95,98];
+        evensum=0;
+        oddsum=0;
+        for(num of array){
+            if(num%2==0){
+                evensum+=num
+            }
+            else{
+                oddsum+=num
+            }
+        }
+        console.log("even sum is:",evensum);
+        console.log("odd sum is:",oddsum);
+
+       //iterating object values and keys
+
+        var obj = {
+        name: 'Chaithu',
+        age: 25,
+        city: 'Nandyal'
+        };
+
+        // Using for...of with Object.entries
+        for (var [keys, values] of Object.entries(obj)) {
+            console.log(keys,":",values);
+        }
+        
+        
+    </script>
+</body>
+</html>
